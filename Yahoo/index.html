@@ -1,1 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="h_Page">
+            <div class="icon"></div>
+            <div class="mid">
+                <!-- 搜尋框 + 天氣 -->
+                <div class="u_mid">
+                    <div class="search">
+                        <input type="text" placeholder="塑膠射出成形">
+                        <div class="voice">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g fill="none" fill-rule="evenodd"><g fill="#188FFF" fill-rule="nonzero"><g><g><path d="M12 16.125c.414 0 .75.336.75.75s-.336.75-.75.75H6c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6zm2.625-9.375c.414 0 .75.336.75.75v.75c0 3.52-2.854 6.375-6.375 6.375-3.52 0-6.375-2.854-6.375-6.375V7.5c0-.414.336-.75.75-.75s.75.336.75.75v.75c0 2.693 2.183 4.875 4.875 4.875 2.693 0 4.875-2.182 4.875-4.875V7.5c0-.414.336-.75.75-.75zM9 .375c1.864 0 3.375 1.51 3.375 3.375v4.5c0 1.864-1.51 3.375-3.375 3.375-1.864 0-3.375-1.51-3.375-3.375v-4.5C5.625 1.886 7.135.375 9 .375zm0 1.5c-1.035 0-1.875.84-1.875 1.875v4.5c0 1.036.84 1.875 1.875 1.875 1.035 0 1.875-.84 1.875-1.875v-4.5c0-1.036-.84-1.875-1.875-1.875z" transform="translate(-856 -27) translate(333 16) translate(523 11)"></path></g></g></g></g></svg>
+                        </div> 
+                        <div class="search_btn">
+                            <svg width="24" style="stroke-width:1;fill:#fff;stroke:#fff;vertical-align:bottom" height="24" viewBox="-0.5 -0.5 25 25" data-icon="search"><path d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403"></path></svg>
+                        </div> 
+                    </div>
+                    <div class="weather">
+                        <i class="weather_img"></i>
+                        <span class="digree">22°</span>
+                        <span class="city">臺北市</span>
+                    </div>
+                </div>
+                <!-- 熱搜 -->
+                <div class="d_mid">
+                    <span style="color:#3f3f3f">熱搜：</span>
+                    <ul class="hot_herf">
+                        <li style="padding-left: 0px; border: none;">大S 酷龍</li>
+                        <li>永光三廠</li> 
+                        <li>林智堅陳怡樺</li> 
+                        <li>黃金價格</li> 
+                        <li>鹿港住宿</li> 
+                        <li>議員戴寧</li> 
+                        <li>俄羅斯股市休市</li> 
+                        <li>電腦課程</li> 
+                        <li>護肝保健食品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="end">
+                <ul>
+                    <!-- 登入 -->
+                    <li class="login">
+                        <div>
+                            <span>登入</span>
+                        </div>
+                    </li>
+                    <!-- 提醒 -->
+                    <li class="remind">
+                        <div>
+                            <svg width="26" style="fill:#6001d2;stroke:#6001d2;stroke-width:0;vertical-align:bottom" height="26" viewBox="0 0 24 27" data-icon="bell-fill"><path d="M23.258 20.424c-.09-.07-.81-.662-1.394-1.7-.114-.2-.45-.914-.503-1.06-.143-.39-.243-.864-.398-1.543-.367-2.33-.34-5.656-.34-5.656 0-.076.003-.15.003-.226 0-4.07-2.926-7.465-6.825-8.28v-.19C13.8.788 12.994 0 12 0s-1.8.79-1.8 1.768v.19c-3.897.815-6.822 4.21-6.822 8.28 0 .076.002.15.004.226 0 0 .023 3.325-.344 5.657-.155.68-.255 1.154-.4 1.545-.053.145-.388.86-.502 1.06-.583 1.037-1.304 1.63-1.394 1.7-.315.24-.452.425-.452.425-.18.227-.29.51-.29.82C0 22.406.607 23 1.354 23c.037 0 .073-.004.11-.005h21.07c.037 0 .075.005.112.005.747 0 1.354-.596 1.354-1.33 0-.308-.108-.593-.29-.82 0 0-.137-.184-.452-.426zM12 27c1.657 0 3-1.343 3-3H9c0 1.657 1.343 3 3 3z"></path></svg>
+                        </div>
+                    </li>
+                    <!-- 信箱 -->
+                    <li class="mail">           
+                        <div>
+                            <svg width="30" style="fill:#6001d2;stroke:#6001d2;stroke-width:0;vertical-align:bottom" height="30" viewBox="0 0 512 512" data-icon="NavMail"><path d="M460.586 91.31H51.504c-10.738 0-19.46 8.72-19.46 19.477v40.088l224 104.03 224-104.03v-40.088c0-10.757-8.702-19.478-19.458-19.478M32.046 193.426V402.96c0 10.758 8.72 19.48 19.458 19.48h409.082c10.756 0 19.46-8.722 19.46-19.48V193.428l-224 102.327-224-102.327z"></path></svg>
+                            <span>信箱</span>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+    </div>
+    <div class="shadow"></div>
+
+    <div class="Masterwrap">
+        <div class="Page">
+            <!-- nav -->
+            <div class="nav">
+                <ul>
+                    <li><a><span>新聞</span></a></li>
+                    <li><a><span>股市</span></a></li>
+                    <li><a><span>理財</span></a></li>
+                    <li class="down_border"><a><span>運動</span></a></li>
+                    <li><a><span>名人娛樂</span></a></li>
+                    <li><a><span>電影</span></a></li>
+                    <li><a><span>Yahoo TV</span></a></li>
+                    <li class="down_border"><a><span>遊戲</span></a></li>
+                    <li><a><span>日本代購</span></a></li>
+                    <li><a><span>字典</span></a></li>                
+                    <li><a><span>3C科技</span></a></li>
+                    <li><a><span>信箱</span></a></li>
+                    <li><a><span>氣象</span></a></li>
+                    <li><a><span>ATM</span></a></li>
+                    <li><a><span>公益</span></a></li>
+                    <li class="rword"><a><span>找咖啡</span></a></li>
+                    <li><a><span>找店+</span></a></li>
+                    <li><a><span>訂餐廳</span></a></li>
+                </ul>
+                <ul>
+                    <li><a><span>拍賣</span></a></li>
+                    <li class="rword"><a><span>購物中心</span></a></li>
+                    <li><a><span>超級商城</span></a></li>
+                    <li class="down_border"><a><span>美日好康</span></a></li>
+                    <li><a><span>汽車機車</span></a></li>
+                    <li><a><span>中古車</span></a></li>
+                    <li><a><span>保險</span></a></li>
+                    <li><a><span>時尚美妝</span></a></li>
+                    <li><a><span>房地產</span></a></li>
+                    <li class="down_border"><a><span>旅遊</span></a></li>                    
+                    <li><a><span>健康</span></a></li>
+                    <li><a><span>星座算命</span></a></li>
+                    <li><a><span>APP下載</span></a></li>
+                    <li><a><span>網路開店</span></a></li>
+                    <li><a><span>買廣告</span></a></li>
+                    <li><a><span>網路行銷</span></a></li>
+                    <li><a><span>聯名卡</span></a></li>
+                    <li><a><span>帳號保護</span></a></li>
+                </ul>
+                <ul style="position: absolute; top:720px;">
+                    <li style="font-size: 13px;color: #1d1da3;width: 70px;">全部服務 ></li>
+                </ul>
+            </div>
+            <!-- main -->
+            <div class="main">
+                <!-- banner -->
+                <div class="banner">
+                    <span class="title">俄烏戰爭</span>
+                    <span class="target">烏中首遭俄軍攻擊 釀死傷！Yahoo聚焦最新局勢</span>
+                    <img src="https://s.yimg.com/uu/api/res/1.2/wimy3S4SkFC9eZJec_ldwA--~B/Zmk9ZmlsbDtoPTEyODtweW9mZj0wO3c9MjI4O2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2022-03/9c6ede30-a106-11ec-bfdc-aebef6bd40cc" alt="">
+                </div>
+                <!-- container -->
+                <div class="container">
+                    <!-- h_container -->
+                    <div class="h_container">
+                        <ul>
+                            <li><div>焦點</div></li>
+                            <li><div>運動</div></li>
+                            <li><div>娛樂</div></li>
+                            <li><div>FUN</div></li>
+                            <li><div>生活</div></li>
+                            <li><div>影音</div></li>
+                        </ul>
+                    </div>
+                    <!-- main container -->
+                    <div class="m_container">
+                        <!-- picture -->
+                        <div class="m_img">
+                            <ul>
+                                <li class="large">
+                                    <a href="/">
+                                        <img class="large" src="https://s.yimg.com/uu/api/res/1.2/ah3VE6HjQ6Wdmtt7ZBHq_g--~B/Zmk9ZmlsbDtoPTM4ODtweW9mZj0wO3c9NzIwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/uu/api/res/1.2/Ukamym6zLoPC3ZUysPXeoQ--~B/aD01OTY7dz0xMDYwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/zh-tw/news_tvbs_com_tw_938/33679d2df208aa88c33b25beebbaeb55.cf.webp" alt="">
+                                        <div class="large_teg">
+                                            <p>玄奘大學創辦人圓寂 遺囑曝光</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="small">
+                                    <a href="/">
+                                        <span class="video">
+                                            <svg width="8" style="left:8px;top:8px;fill:#fff;stroke:#fff;stroke-width:0;vertical-align:bottom" height="8" viewBox="0 0 512 512" data-icon="CorePlay"><path d="M82.294 490.295c-20.327 11.736-36.952 2.14-36.952-21.332V42.295c0-23.472 16.632-33.055 36.952-21.332L451.67 234.295c20.318 11.75 20.318 30.945 0 42.682L82.294 490.295z"></path></svg>
+                                        </span>
+                                        <img src="https://s.yimg.com/uu/api/res/1.2/9GFStWuGB7yXcSQIgvHC_g--~B/Zmk9ZmlsbDtoPTM4ODtweW9mZj0wO3c9NzIwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2022-03/fd531e20-a1b8-11ec-977c-cf8aadbac9d6.cf.webp" alt="">
+                                        <div class="small_teg">
+                                            <p>撤烏難 車資3千台幣變美金</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="small" style="width: 50%; float: right;">
+                                    <a href="/">
+                                        <img src="https://s.yimg.com/uu/api/res/1.2/6BjTdtaVlkGegVGIiJ2Gug--~B/Zmk9ZmlsbDtoPTM4ODtweW9mZj0wO3c9NzIwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2022-03/464e24b0-a198-11ec-9b7d-b63da932032c.cf.webp" alt="">
+                                        <div class="small_teg">
+                                            <p>避第三次世界大戰 拜登撂重話</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- word -->
+                        <div class="m_word">
+                            <ul>
+                                <li>
+                                    <a>
+                                        <span>源頭待追！雙北家庭群聚擴大</span>
+                                    </a>
+                                    <p>本土新增1例、境外多61例，北市30多歲女曾接種一劑BNT疫苗，</p>
+                                </li>
+                                <li>
+                                    <a>
+                                        <svg width="18" style="margin-right:8px;fill:#324fe1;stroke:#324fe1;stroke-width:0;vertical-align:bottom" height="18" viewBox="0 0 24 24" data-icon="play-round-fill"><path d="M3.45 21.103c1.085.984 2.36 1.712 3.82 2.186 1.462.47 3.044.71 4.752.71 1.677 0 3.248-.24 4.708-.71.586-.19 1.14-.423 1.665-.695.785-.406 1.505-.903 2.155-1.492 1.086-.984 1.93-2.232 2.54-3.74.606-1.507.91-3.295.91-5.363 0-2.07-.304-3.856-.91-5.365-.61-1.508-1.455-2.754-2.54-3.737-1.085-.987-2.358-1.714-3.82-2.187C15.27.238 13.7 0 12.022 0c-1.708 0-3.29.237-4.753.71-.476.153-.93.338-1.365.547-.904.432-1.723.976-2.455 1.64-1.085.984-1.932 2.23-2.54 3.738C.305 8.145 0 9.93 0 12c0 2.068.304 3.856.91 5.364.608 1.507 1.455 2.755 2.54 3.74zM9.71 15.89c-.393.227-.71.042-.71-.413V8.524c0-.455.318-.64.71-.412l5.976 3.476c.39.227.39.597 0 .824L9.71 15.89z"></path></svg>
+                                        <span>普丁：俄烏談判朝正向轉變</span>
+                                    </a>
+                                    <p>與白俄總統盧卡申科會面時透露，是否是預告停戰，耐人尋味</p>
+                                </li>
+                                <li>
+                                    <a>
+                                        <svg width="18" style="margin-right:8px;fill:#324fe1;stroke:#324fe1;stroke-width:0;vertical-align:bottom" height="18" viewBox="0 0 24 24" data-icon="play-round-fill"><path d="M3.45 21.103c1.085.984 2.36 1.712 3.82 2.186 1.462.47 3.044.71 4.752.71 1.677 0 3.248-.24 4.708-.71.586-.19 1.14-.423 1.665-.695.785-.406 1.505-.903 2.155-1.492 1.086-.984 1.93-2.232 2.54-3.74.606-1.507.91-3.295.91-5.363 0-2.07-.304-3.856-.91-5.365-.61-1.508-1.455-2.754-2.54-3.737-1.085-.987-2.358-1.714-3.82-2.187C15.27.238 13.7 0 12.022 0c-1.708 0-3.29.237-4.753.71-.476.153-.93.338-1.365.547-.904.432-1.723.976-2.455 1.64-1.085.984-1.932 2.23-2.54 3.738C.305 8.145 0 9.93 0 12c0 2.068.304 3.856.91 5.364.608 1.507 1.455 2.755 2.54 3.74zM9.71 15.89c-.393.227-.71.042-.71-.413V8.524c0-.455.318-.64.71-.412l5.976 3.476c.39.227.39.597 0 .824L9.71 15.89z"></path></svg>
+                                        <span>HBL直播／淡商決賽尬陽明</span>
+                                    </a>
+                                    <p>男子、女子4強賽熱血激鬥，精采賽事鎖定Yahoo</p>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>最硬教召嘗鮮 國軍端印度咖哩</span>
+                                    </a>
+                                    <p>全程41餐，1餐安排野戰口糧，3次餐食為新式餐盒</p>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>以往連假都熱門⋯訂位率僅1%</span>
+                                    </a>
+                                    <p>東琉線乏人問津，綠島及蘭嶼航線有46%、35%</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- sales -->
+                <div class="sales">
+                    <!-- h_sales -->
+                    <div class="h_sales">
+                        <ul>
+                            <li><div>購物中心</div></li>
+                            <li><div>超級商城</div></li>
+                            <li><div>拍賣</div></li>
+                            <li class="active"><div>美日好康</div></li>                              
+                        </ul>
+                        <a>
+                            <img style="vertical-align: middle; margin-right:4px;" src="https://s.yimg.com/dh/ap/default/170323/icon1.png" alt="">
+                            即辦即用 購物返利最高17%
+                        </a>
+                    </div>
+                    <!-- m_sales -->
+                    <div class="m_sales">
+                        <div class="m_item">
+                            <div class="m_item_img">
+                                <img src="https://s.yimg.com/bt/api/res/1.2/GynlLsygg6Jlg3nT8.lxwQ--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/47CFE87B13-Product-20732358.jpg" alt="">
+                                <div class="m_item_tag">
+                                    <a class="tag">官方直營)娘家大紅麴</a>
+                                    <a class="tag">BURBERRY SHEER 女性淡香水</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_item">
+                            <div class="m_item_img">
+                                <img src="https://s.yimg.com/bt/api/res/1.2/Ch_OsryDj_BTmRPLPwwZ4w--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/D66B3CB2A9-Product-23393122.jpg" alt="">
+                                <div class="m_item_tag">
+                                    <a class="tag">DOHO 奈米售後安心防水噴霧</a>
+                                    <a class="tag">養氣 抗疲勞滿額雞精</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_item">
+                            <div class="m_item_img">
+                                <img src="https://s.yimg.com/bt/api/res/1.2/zj.J4QS.uF9fmxHzONmUTA--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/D502032A17-Gd-938668.jpg" alt="">
+                                <div class="m_item_tag">
+                                    <a class="tag">桂格 活靈芝菌絲體滋補液60ml*30入</a>
+                                    <a class="tag">華歌爾 獨家特殺！無痕平口內衣</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_item">
+                            <div class="m_item_img">
+                                <img src="https://s.yimg.com/bt/api/res/1.2/9UO6TgZ_KgfiZrZXwjs9Tg--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/74ED3E787A-Product-24176225.jpg" alt="">
+                                <div class="m_item_tag">
+                                    <a class="tag">IDEA 輕巧繽紛五層收納櫃</a>
+                                    <a class="tag">滿意寶寶 滿意活潑透氣紙尿褲</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_item">
+                            <div class="m_item_img">
+                                <img src="https://s.yimg.com/bt/api/res/1.2/eQuqmR0p3vQTeyv5QEFzCg--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/E6C6DE7C9C-Product-23095041.jpg" alt="">
+                                <div class="m_item_tag">
+                                    <a class="tag">舒酸定 長效抗敏超值組牙膏</a>
+                                    <a class="tag">每朝健康 雙效圓潤順口綠茶</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m_item">
+                            <div class="m_item_img">
+                                <img src="https://s.yimg.com/bt/api/res/1.2/...BfoULiMJWr0Rk_rtzEw--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/59CCBE1DB8-Gd-5633806.jpg" alt="">
+                                <div class="m_item_tag">
+                                    <a class="tag">蒲公英 環保箱購吸水力擦手紙</a>
+                                    <a class="tag">依必朗 抗菌防霉陽光香氛洗衣精</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- m_main -->
+                <div class="m_main">
+                    <div class="h_m_main">
+                        <ul>
+                            <li><div>熱門</div></li>
+                            <li><div>夯好物</div></li>
+                            <li><div>多元觀點</div></li>
+                            <li><div>玩樂</div></li>
+                            <li><div>品味</div></li>
+                            <li><div>科技與汽車</div></li>
+                        </ul>
+                    </div>
+                    <div class="d_m_main">
+                        <ul>
+                            <li>
+                                <div class="m_pic">
+                                    <img src="https://s.yimg.com/uu/api/res/1.2/gOl9B6yDhYPw0rhPhB_.Wg--~B/Zmk9ZmlsbDtoPTI0MDtweW9mZj0wO3c9NDI4O2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/uu/api/res/1.2/kV21THsEL.mgWdZLBxvVBA--~B/aD00NTE7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/setn.com.tw/8b24c67a0d704e888cbbece687fe129b.cf.webp" alt="">
+                                </div>
+                                <div class="m_item">
+                                    <h3>國民黨批「國會流氓」　蘇貞昌回應了</h3>
+                                    <div class="m_item_t">記者盧素梅／台北報導 針對國民黨嗆行政院長蘇貞昌迴避承諾不缺電的政治責任而扯東扯西，這樣的行為做實「國會流氓」，蘇貞昌今（13）日受訪時表示，他向來是「你敬我一分，我</div>
+                                    <div class="m_item_f">
+                                        <span>三立新聞網 setn.com</span>
+                                        <span>2 小時前</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="m_pic">
+                                    <img src="https://s.yimg.com/uu/api/res/1.2/kswMQuZGTDc_yxliQIpIFQ--~B/Zmk9ZmlsbDtoPTI0MDtweW9mZj0wO3c9NDI4O2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/uu/api/res/1.2/8A09M3b9fFAfujCblAVTlA--~B/aD0xMDI0O3c9MTUzNjthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/ko/cnews.com.tw/c4b18b845336dcdd1df211661a544702.cf.webp" alt="">
+                                </div>
+                                <div class="m_item">
+                                    <h3>嗆蔣萬安／藍委批蘇貞昌荒唐跋扈 立委質詢代表民意</h3>
+                                    <div class="m_item_t">CNEWS匯流新聞網記者屈彥辰／台北報導 國民黨立委蔣萬安日前質詢行政院長蘇貞昌，要求其當場承諾未來一年不再大停電，遭蘇貞昌以「你祖父都沒有反攻大陸」反唇相譏，昨（12）日更以「街頭小混混挑釁」諷刺蔣萬安。國民黨立委李貴敏昨晚對外表示，行政院長要有多荒唐、多跋扈，才能把代表民意質詢的立委抹黑成「街頭小混混挑釁」？ 李貴敏說，缺電是現在老百姓最關心的事情，蔣萬...</div>
+                                    <div class="m_item_f">
+                                        <span>匯流新聞網</span>
+                                        <span>30 分鐘前</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="m_pic">
+                                    <img src="https://s.yimg.com/uu/api/res/1.2/HBGegDCDOC1MACnH.P7yvg--~B/Zmk9ZmlsbDtoPTI0MDtweW9mZj0wO3c9NDI4O2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/uu/api/res/1.2/doORdU5vz0A5So1dKlmeSg--~B/aD03NjU7dz0xMDI0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/ko/chinatimes.com.tw/bec96d2aa5056b752936a7e414938ae1.cf.webp" alt="">
+                                </div>
+                                <div class="m_item">
+                                    <h3>朱立倫批蘇貞昌惡意反質詢 質疑缺電的解方在哪？</h3>
+                                    <div class="m_item_t">國民黨立委蔣萬安昨（12）日在立法院質詢行政院長蘇貞昌關於缺電的議題，要求蘇貞昌保證不缺電，卻遭蘇貞昌回嘴稱蔣萬安的祖父也沒反攻大陸。國民黨主席朱立倫在臉書批蘇貞昌「惡意反質詢」卸責，也呼籲民進黨政府，誠實面對缺電危機，拖騙解決不了問題！</div>
+                                    <div class="m_item_f">
+                                        <span>中時新聞網</span>
+                                        <span>2 小時前</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="m_pic">
+                                    <img src="https://s.yimg.com/uu/api/res/1.2/COhPxJki5n7D87KjT8QXqA--~B/Zmk9ZmlsbDtoPTI0MDtweW9mZj0wO3c9NDI4O2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/uu/api/res/1.2/8dytuHIrK2Ea3KmeyLk4cw--~B/aD01NDE7dz04NTc7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/gotv_ctitv_com_tw_678/8a6a76fae0167db0a349e21ab692f8cc.cf.webp" alt="">
+                                </div>
+                                <div class="m_item">
+                                    <h3>蘇貞昌「惡意反質詢」猛卸責！國民黨團「不排除暫停總質詢」抵制</h3>
+                                    <div class="m_item_t">行政院長蘇貞昌11日上午前往立法院報告備詢，對上國民黨立委蔣萬安，針對303全台大停電進行質詢，提到經濟部長王美花承諾一年不跳電，「院長是否敢承諾不跳電」，對此蘇貞昌竟不願意做出答應，兩人唇槍舌戰一番，蘇貞昌竟反嗆蔣萬安，「你祖父以前還承諾反攻大陸」，對此，國民黨立法院黨團將開會討論，要求立法院長游錫堃召集朝野協商，做出因應維護議事秩序，否則不排除暫停總質詢抵制。</div>
+                                    <div class="m_item_f">
+                                        <span>中天快點TV</span>
+                                        <span>1 小時前</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>          
+            <!-- aside -->
+            <div class="aside">
+                <!-- yahoo tv -->
+                <div class="tv">
+                    <div class="message">
+                        <svg style="fill:#b9bdc5;" width="26" style="fill:#000;stroke:#000;stroke-width:0;vertical-align:bottom" height="26" viewBox="0 0 24 24" data-icon="feedback"><path d="M7.617 3.392c-.817.483-1.267 1.3-1.267 2.333v.8h-.683c-1 0-1.767.533-2.25 1.567-.4.833-.4.917-.4 6.3 0 3.167.067 5.633.167 5.883.183.467.867.817 1.35.667.15-.05.833-.65 1.5-1.333l1.217-1.25h4.55c5.068 0 5.234-.034 5.868-1.068.2-.317.4-.95.467-1.417.1-.817.1-.833.75-.933.883-.15 1.75-.933 1.983-1.783.1-.418.15-2.118.117-4.55-.05-4.284-.067-4.318-1.2-5.15-.433-.334-.7-.35-5.983-.4-5.483-.034-5.533-.034-6.183.332zM19.084 4.96c.4.382.4 7.75 0 8.132-.133.15-.4.267-.567.267-.283 0-.3-.2-.367-2.55-.05-2.268-.083-2.6-.417-3.118-.667-1.067-.7-1.067-5.467-1.167l-4.333-.083-.05-.533c-.033-.368.05-.634.283-.868.333-.333.517-.35 5.5-.35 4.467 0 5.2.033 5.417.267zM16.317 8.39c.283.283.283 7.817 0 8.1-.15.15-1.483.2-4.95.2h-4.75L5.65 17.71l-.967 1v-5.05c0-3.718.05-5.118.2-5.268.283-.283 11.15-.283 11.433 0zm-9.484 3.65c-.3.567.05 1.15.683 1.15s.983-.583.683-1.15c-.268-.483-1.1-.483-1.368 0zm3.217-.15c-.317.317-.233.917.167 1.2.317.217.417.233.717.033.4-.267.517-.85.25-1.2-.25-.283-.867-.3-1.133-.033zm2.967.133c-.367.683.233 1.433.933 1.167.417-.167.567-.617.383-1.133-.183-.5-1.067-.518-1.317-.034z"></path></svg>
+                    </div>
+                    <div class="youtube"> 
+                    </div>
+                    <div class="yahoo_tv">
+                        <a href="/">
+                            <img src="https://s.yimg.com/cv/apiv2/twfrontpage/logo/TW_desktop_tv_home.png" alt="">
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="video">
+                    </div>
+                    <div class="e_lead">
+                        <div class="tv-footer">
+                            <div class="circle">
+                                <img src="https://s.yimg.com/cv/apiv2/default/20191116/176x176.jpg" alt="">
+                            </div>
+                            <div class="art">
+                                <span>佼哥call out問哪買？出動詹雯婷一家解答</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 優質好物 -->
+                <div class="good">
+                    <!-- h_good -->
+                    <div class="h_good">
+                        <ul>
+                            <li style="
+                                font-size: 18px;
+                                font-weight: 400;
+                                padding-right: 80px;
+                                color: #5f5f5f;
+                            "><div>優質好物</div></li>
+                            <li class="nor"><div>熱銷夯品</div></li>
+                            <li class="nor"><div>挑戰低價</div></li>
+                        </ul>
+                    </div>
+                    <!-- m_good -->
+                    <div class="m_good">
+                        <ul>
+                            <li>
+                                <div class="out">
+                                    <div class="img" style="background-image: url(https://s.yimg.com/bt/api/res/1.2/06kR2_G861RhlvgYetpGeg--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/DC3C6F881C-SP-8679312.jpg);">
+                                    </div>
+                                    <div class="item">
+                                        <div class="sol">滿940大優惠</div>
+                                        <div class="sol_t">華歌爾集團 新降內衣2件2000起小褲240起</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="out">
+                                    <div class="img" style="background-image: url(https://s.yimg.com/bt/api/res/1.2/XhH3GH7ASEyvQ8oAt2YzbQ--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/58744CA36E-Gd-9573249.jpg);">
+                                    </div>
+                                    <div class="item">
+                                        <div class="sol">滿1件折1000</div>
+                                        <div class="sol_t">ASUS 筆電下殺↘1000</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="out">
+                                    <div class="img" style="    background-image: url(https://s.yimg.com/bt/api/res/1.2/Srr3NsHR7MIxeFfkHt7q5w--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/29ae6b0bed-Gd-8061438.jpg);">
+                                    </div>
+                                    <div class="item">
+                                        <div class="sol">滿1388折100</div>
+                                        <div class="sol_t">母嬰大牌小獅王辛巴美好女子禮遇季低至64折</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="out">
+                                    <div class="img" style="    background-image: url(https://s.yimg.com/bt/api/res/1.2/_NmYRIbAGtc.N4iBG6W01g--~B/Zmk9ZmlsbDtweW9mZj01MDtweG9mZj01MDt3PTExMjtoPTExMjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/zp/MerchandiseImages/414F3B7AED-Product-14812228.jpg);">
+                                    </div>
+                                    <div class="item">
+                                        <div class="sol">滿1999大優惠</div>
+                                        <div class="sol_t">AVIS艾維斯 開學季全場最低價</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 旅遊專區 -->
+                <div class="good">
+                    <!-- h_good -->
+                    <div class="h_good">
+                        <ul>
+                            <li style="
+                                font-size: 18px;
+                                font-weight: 400;
+                                padding-right: 80px;
+                                color: #5f5f5f;
+                            "><div>旅遊專區</div></li>
+                        </ul>
+                    </div>
+                    <!-- m_good -->
+                    <div class="m_travel">
+                        <ul>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/Deepak/02908555/new_img.jpg" alt="">
+                                <a href=""> 春遊促銷買一送一 </a>
+                                <a href=""> 馬祖追藍眼淚預購 </a>
+                                <a href=""> 住宿０元是真的！ </a>
+                            </li>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/sundar/2019/KT2_Logo_Yahoo112x74.jpg" alt="">
+                                <a href=""> 澎湖花火搶先GO </a>
+                                <a href=""> 馬祖浪漫藍眼淚 </a>
+                                <a href=""> 郵輪式列車6150起 </a>
+                            </li>
+                            <li>
+                                <img src="	https://s.yimg.com/cv/apiv2/tw/sundar/Oct/1023/kt3/LOGO.gif" alt="">
+                                <a href=""> 高速快航馬祖3天 </a>
+                                <a href=""> 澎湖五星飯店精選 </a>
+                                <a href=""> 金門網紅美食打卡 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 生活情報 -->
+                <div class="good">
+                    <!-- h_good -->
+                    <div class="h_good">
+                        <ul>
+                            <li style="
+                                font-size: 18px;
+                                font-weight: 400;
+                                padding-right: 80px;
+                                color: #5f5f5f;
+                            "><div>生活情報</div></li>
+                            <li class="nor"> OB嚴選</li>
+                            <li class="nor"> momo </li>
+                        </ul>
+                    </div>
+                    <!-- m_good -->
+                    <div class="m_travel">
+                        <ul>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/suma/03446723/0313a.jpg" alt="">
+                                <a href=""> 戴森優惠倒數計時 </a>
+                                <a href=""> ＮＢ倩碧超狂折扣 </a>
+                                <a href=""> 剁手搶限定商品！ </a>
+                            </li>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/suma/03446723/0313b.jpg" alt="">
+                                <a href=""> adidas回饋搶 </a>
+                                <a href=""> 全民抗漲回饋38% </a>
+                                <a href=""> 限量商品錯過可惜 </a>
+                            </li>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/suma/03446723/0313c.jpg" alt="">
+                                <a href=""> 洗沐美體五折起！ </a>
+                                <a href=""> 旅遊神券5折up </a>
+                                <a href=""> 今日限定限時搶購 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 省錢特區 -->
+                <div class="good">
+                    <!-- h_good -->
+                    <div class="h_good">
+                        <ul>
+                            <li style="
+                                font-size: 18px;
+                                font-weight: 400;
+                                padding-right: 80px;
+                                color: #5f5f5f;
+                            "><div>省錢特區</div></li>
+                            <li class="nor"> 購! 達人</li>
+                            <li class="nor"> 東森購物 </li>
+                        </ul>
+                    </div>
+                    <!-- m_good -->
+                    <div class="m_travel">
+                        <ul>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/suma/03446780/red_yellow.jpg" alt="">
+                                <a href=""> 女王價到搶折價券 </a>
+                                <a href=""> COACH馬鞍包 </a>
+                                <a href=""> 精品鞋包5折up </a>
+                            </li>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/suma/03446780/bioup.jpg" alt="">
+                                <a href=""> NB粉底精粹670 </a>
+                                <a href=""> 佳麗寶彩妝3.8折 </a>
+                                <a href=""> 3C通訊折$3000 </a>
+                            </li>
+                            <li>
+                                <img src="https://s.yimg.com/cv/apiv2/tw/suma/03446780/box.jpg" alt="">
+                                <a href=""> 衛生紙72入$860 </a>
+                                <a href=""> 春夏美肌幣折80% </a>
+                                <a href=""> 東森食堂強檔獻禮 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="footer">
+                    <!-- back to top -->
+                    <div class="back_top">
+                        <i></i>
+                    </div>
+                    <!-- down list -->
+                    <div class="down_list">
+                        <div class="s_icon">
+                            <ul>
+                                <li>
+                                    <svg class="Cur(p)" width="24" style="fill:#232a31;stroke:#232a31;stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoFacebook"><path d="M12.752 30.4V16.888H9.365V12.02h3.387V7.865c0-3.264 2.002-6.264 6.613-6.264 1.866 0 3.248.19 3.248.19l-.11 4.54s-1.404-.013-2.943-.013c-1.66 0-1.93.81-1.93 2.152v3.553h5.008l-.22 4.867h-4.786V30.4h-4.88z"></path></svg>
+                                </li>
+                                <li>
+                                    <svg class="Cur(p)" width="24" style="fill:#232a31;stroke:#232a31;stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 24 24" data-icon="LogoInstagramEmblem1"><path d="M20.134 16.036c-.044.975-.207 1.504-.344 1.856-.182.467-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.352.136-.88.3-1.856.344-1.054.048-1.37.058-4.04.058s-2.985-.01-4.04-.058c-.974-.045-1.503-.208-1.855-.344a3.104 3.104 0 0 1-1.15-.748 3.102 3.102 0 0 1-.746-1.15c-.137-.352-.3-.88-.345-1.856-.05-1.054-.06-1.37-.06-4.04s.01-2.985.06-4.04c.044-.974.207-1.503.344-1.855.18-.466.398-.8.747-1.15.35-.35.684-.565 1.15-.747.353-.137.882-.3 1.857-.344 1.054-.05 1.37-.06 4.04-.06s2.985.01 4.04.06c.974.044 1.503.206 1.856.343.466.182.8.398 1.15.748s.565.684.747 1.15c.137.353.3.882.344 1.857.048 1.054.058 1.37.058 4.04s-.01 2.985-.058 4.04m1.8-8.162c-.05-1.064-.218-1.79-.465-2.427a4.923 4.923 0 0 0-1.154-1.77 4.923 4.923 0 0 0-1.77-1.154c-.637-.247-1.364-.416-2.428-.464-1.066-.05-1.406-.06-4.12-.06-2.716 0-3.057.01-4.123.06-1.064.048-1.79.217-2.427.464a4.91 4.91 0 0 0-1.77 1.153 4.897 4.897 0 0 0-1.153 1.77c-.248.637-.416 1.364-.465 2.428C2.01 8.94 2 9.28 2 11.995c0 2.716.01 3.057.06 4.123.05 1.064.217 1.79.465 2.427a4.885 4.885 0 0 0 1.153 1.77 4.885 4.885 0 0 0 1.77 1.153c.636.248 1.363.417 2.427.465 1.066.05 1.407.06 4.122.06s3.055-.01 4.12-.06c1.065-.048 1.792-.217 2.428-.465a4.897 4.897 0 0 0 1.77-1.153 4.91 4.91 0 0 0 1.154-1.77c.246-.636.415-1.363.463-2.427.05-1.066.06-1.407.06-4.122s-.01-3.055-.06-4.12m-9.936-1.013a5.135 5.135 0 1 1-.002 10.27 5.135 5.135 0 0 1 .002-10.27zm0 1.8a3.332 3.332 0 1 0 0 6.666 3.332 3.332 0 0 0 0-6.666zm5.336-3.203a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"></path></svg>
+                                </li>
+                                <li>
+                                    <svg class="Cur(p)" width="24" style="fill:#232a31;stroke:#232a31;stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 24 24" data-icon="LogoYoutube"><path d="M9.73 15.117l-.002-6.18 5.944 3.1-5.943 3.08zm13.05-7.252s-.215-1.516-.875-2.184c-.836-.875-1.775-.88-2.203-.93-3.08-.223-7.697-.223-7.697-.223h-.01s-4.618 0-7.696.222c-.43.05-1.37.055-2.206.93-.66.67-.874 2.185-.874 2.185S1 9.645 1 11.425v1.67c0 1.78.22 3.56.22 3.56s.215 1.516.874 2.184c.837.875 1.937.847 2.426.94C6.28 19.947 12 20 12 20s4.623-.007 7.702-.23c.43-.05 1.367-.055 2.204-.93.66-.67.875-2.185.875-2.185s.22-1.78.22-3.56v-1.67c0-1.78-.22-3.56-.22-3.56z"></path></svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="list">
+                            <li>服務條款 (更新版)</li>
+                            <li>隱私權政策 (更新版)</li>
+                            <li>服務中心</li>
+                            <li>安全性</li>
+                            <li>網路行銷</li>
+                            <li>中小企業行銷</li>
+                            <li>工作機會</li>
+                            <li>Yahoo奇摩官方部落格</li>
+                            <li>Yahoo奇摩粉絲團</li>
+                        </ul>
+                        <div class="copyright">© 2022 Yahoo. All rights reserved.</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
